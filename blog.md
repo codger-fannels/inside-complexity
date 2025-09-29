@@ -7,7 +7,6 @@ title: Blog
 <ul>
   {% for post in site.posts %}
     <li>
-      <h1>Latest Posts</h1>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       {{ post.excerpt }}
     </li>
