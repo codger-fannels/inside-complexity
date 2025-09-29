@@ -1,5 +1,7 @@
 ---
-layout: page
-title: "about"
-permalink: /about/contact
+layout: default
+title: About
 ---
+# About page
+
+This page tells you a little bit about me.
