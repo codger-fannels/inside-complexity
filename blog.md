@@ -5,9 +5,9 @@ title: Blog
 <h1>Latest Posts</h1>
 
 <ul>
-  <h1>test</h1>
   {% for post in site.posts %}
     <li>
+      <h1>Latest Posts</h1>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       {{ post.excerpt }}
     </li>
