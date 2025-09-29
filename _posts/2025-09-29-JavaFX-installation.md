@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "JavaFX Installation"
-date: 2025-09-29 21:43:00 -0000
-categories: CATEGORY-1 CATEGORY-2
 ---
 
 ## 1. Installation du JDK

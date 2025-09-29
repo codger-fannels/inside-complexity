@@ -1,4 +1,3 @@
-source              : .
 theme: jekyll-theme-minimal
 title: Inside Complexity
 description: A blog exploring advanced software development concepts — from architecture and scalability to patterns, abstractions, and system design.
