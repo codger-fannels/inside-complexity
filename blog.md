@@ -7,7 +7,7 @@ title: Blog
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ "test" | append: post.url }}">{{ post.title }}</a>
+      <a href="{{ "t" | append: post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
