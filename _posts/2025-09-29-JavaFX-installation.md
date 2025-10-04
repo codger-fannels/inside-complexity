@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "JavaFX Installation"
-permalink: /install-javafx/
 ---
 
 ## 1. Installation du JDK
