@@ -7,7 +7,7 @@ title: Blog
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="/inside-complexity{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
