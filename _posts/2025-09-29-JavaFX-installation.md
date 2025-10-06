@@ -5,7 +5,7 @@ title: "JavaFX Installation"
 
 ## 1. Installation du JDK
 
-Quand tu crées un projet **JavaFX** dans IntelliJ IDEA, IntelliJ télécharge et installe automatiquement un **JDK** dans : `/Library/Java/JavaVirtualMachines/ms-21.0.6/Contents/Home`. Pas besoin d’installer manuellement un JDK. Pas besoin de créer une variable `JAVA_HOME`. IntelliJ gère tout seul, toi tu touches à rien. Si tu t’acharnes à définir `JAVA_HOME` manuellement, c’est que t’as du temps à perdre et pas assez de séries Netflix à mater.
+Quand tu crées un projet **JavaFX** dans IntelliJ IDEA, IntelliJ télécharge et installe automatiquement un **JDK** dans : `/Library/Java/JavaVirtualMachines/ms-21.0.6/Contents/Home`. Pas besoin d’installer manuellement un JDK. Pas besoin de créer une variable `JAVA_HOME`. IntelliJ gère tout seul, toi tu touches à rien.
 
 ## 2. Pourquoi `java -version` fonctionne sans `JAVA_HOME` ?
 
@@ -16,9 +16,11 @@ Sur macOS, quand tu tapes `java` dans le terminal, t’exécutes pas Java. T�
 
 ## 3. Quand définir `JAVA_HOME` ?
 
-**Utile pour** : Maven, Gradle, Ant, Tomcat ont souvent besoin de la variable. Ces trucs sont comme des bébés : si tu leur donnes pas leur `JAVA_HOME`, ils se mettent à hurler en rouge dans ta console.
+**Utile pour** : Maven, Gradle, Ant, Tomcat ont souvent besoin de la variable.
+
 **Indispensable** si tu jongles avec plusieurs JDK (ex: 17 et 21) pour forcer un outil à utiliser une version donnée.
-**Jamais** si tu bosses tranquille dans IntelliJ. Sérieusement, IntelliJ s’en fout. Si tu définis `JAVA_HOME` “au cas où”, c’est comme mettre deux capotes : inutile et ridicule.
+
+**Jamais** si tu bosses tranquille dans IntelliJ. Sérieusement, IntelliJ s’en fout.
 
 ## 4. Maven dans IntelliJ
 
@@ -42,7 +44,7 @@ IntelliJ le trouve grâce au **PATH**, le `PATH` est une **variable d’envi
 Quand tu configures ton projet Maven, IntelliJ demande :
 ### 🔹 Le GroupId
 
-Ton blaze officiel. Identifie ton organisation / auteur du projet.
+Identifie ton organisation / auteur du projet.
 Convention : **nom de domaine inversé**.
 Ça permet d’éviter les collisions de noms si deux projets ont le même artifact.
 Exemples :
@@ -88,9 +90,3 @@ Ce projet serait publié comme :
 ```
 com.alicedupont:gestion-notes:1.0.0
 ```
-
-Et voilà, t’as coché trois cases et Maven te fait croire que t’es un architecte logiciel.
-
-![[Pasted image 20250904215443.png]]
-
-https://www.jetbrains.com/help/idea/javafx.html#package-app-with-jlink
